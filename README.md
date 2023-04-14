@@ -23,3 +23,13 @@ One of the primary goals of the project is to **avoid breaking changes**. If you
  - [openedx-translations](https://github.com/openedx/openedx-translations) will have a related PR that adds the XBlock to the pipeline. This will not affect the current way of managing/updating translations
  - At the end of the project, a clear change log will be added and all translations will be handled by Atlas. Thus, the local translation will be removed from the repo within the version bump
  - A notification for the community will be published to ensure that everyone knows why translations directories are removed from all repos
+
+**For Micro-frontends:**
+
+ - Legacy hardcoded translations are kept into the repo.
+ - Consolodate all i18n imports into `src/i18n/index.js`
+ - Add `atlas` integration in `make pull_translations` but only if `OPENEDX_ATLAS_PULL` is set
+ - Bump frontend-platform and use `intl-imports.js` to generate up to date import files
+ - If translations is missing, they're added according to the latest Micro-frontend i18n pattern in par with https://github.com/openedx/frontend-template-application/
+
+
