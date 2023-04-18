@@ -5,6 +5,8 @@ References
 
 This pull request is part of the [FC-0012 project](https://openedx.atlassian.net/l/cp/XGS0iCcQ) which is sparked by the [Translation Infrastructure update OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification).
 
+Join the conversation on [Open edX Slack #translations-project-fc-0012](https://openedx.slack.com/archives/C04R6TUJB7T).
+
 Check the links above for full information about the overall project.
 
 Internalization is being rearchitected in Open edX Python, XBlock, Micro-frontend, and other projects. There are a number of immediately visible changes:
