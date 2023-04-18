@@ -27,7 +27,7 @@ One of the primary goals of the project is to **avoid breaking changes**. If you
 **For Micro-frontends:**
 
  - Legacy hardcoded translations are kept into the repo.
- - Consolodate all i18n imports into `src/i18n/index.js`
+ - Consolidate all i18n imports into `src/i18n/index.js`
  - Add `atlas` integration in `make pull_translations` but only if `OPENEDX_ATLAS_PULL` is set
  - Bump frontend-platform and use `intl-imports.js` to generate up to date import files
  - If translations is missing, they're added according to the latest Micro-frontend i18n pattern in par with https://github.com/openedx/frontend-template-application/
