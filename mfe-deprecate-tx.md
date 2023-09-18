@@ -1,0 +1,34 @@
+## Breaking change!
+
+This change breaks the Jenkins transifex integration which has been deprecated in favor of the new GitHub Transifex App integration as part of OEP-58.
+
+## Changes
+
+ - Removes all direct use of `tx pull` and `tx push` commands from the micro-frontend in favor
+of the [`atlas pull`](https://github.com/openedx/openedx-atlas/) command.
+ - Remove source and language translations from the repositories, hence no `.json`, `.po` or `.mo` files will be committed into the repos.
+ - Add standardized `make extract_translations` in all repositories
+ - Remove the experimental `OPENEDX_ATLAS_PULL` flag to make `atlas pull` the default. 
+ - Push user-facing messages strings into [openedx/openedx-translations](https://github.com/openedx/openedx-translations/).
+ - Integrate root repositories with [openedx/openedx-atlas](https://github.com/openedx/openedx-atlas/) to pull translations on build/deploy time
+ - Remove all Transifex related `Makefile` targets
+
+Merge timeline
+-----------------------
+
+This should only be merged after [Translation Infrastructure update OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification) is fully implemented.
+
+The timing announcement will be shared by @brian-smith-tcril on [#translations-project-fc-0012](https://openedx.slack.com/archives/C04R6TUJB7T) Open edX Slack channel.
+
+Keep this pull request as a draft to prevent accidental merge.
+
+References
+----------
+
+This contribution is part of the [FC-0012 project](https://openedx.atlassian.net/l/cp/XGS0iCcQ) which is sparked by the [Translation Infrastructure update OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification).
+
+Up-to-date project overview and details are available in the [Approach Memo and Technical Discovery: Translations Infrastructure Implementation](https://docs.google.com/document/d/11dFBCnbdHiCEdZp3pZeHdeH8m7Glla-XbIin7cnIOzU/edit#) document.
+
+Join the conversation on [Open edX Slack #translations-project-fc-0012](https://openedx.slack.com/archives/C04R6TUJB7T).
+
+Check the links above for full information about the overall project.
