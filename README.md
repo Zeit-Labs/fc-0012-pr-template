@@ -3,7 +3,7 @@
 References
 ----------
 
-This pull request is part of the [FC-0012 project](https://openedx.atlassian.net/l/cp/XGS0iCcQ) which is sparked by the [Translation Infrastructure update OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification).
+This contribution is part of the [FC-0012 project](https://openedx.atlassian.net/l/cp/XGS0iCcQ) which is sparked by the [Translation Infrastructure update OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification).
 
 Up-to-date project overview and details are available in the [Approach Memo and Technical Discovery: Translations Infrastructure Implementation](https://docs.google.com/document/d/11dFBCnbdHiCEdZp3pZeHdeH8m7Glla-XbIin7cnIOzU/edit#) document.
 
@@ -11,7 +11,7 @@ Join the conversation on [Open edX Slack #translations-project-fc-0012](https://
 
 Check the links above for full information about the overall project.
 
-Internalization is being rearchitected in Open edX Python, XBlock, Micro-frontend, and other projects. There are a number of immediately visible changes:
+Internalization is being re-architected in Open edX Python, XBlock, Micro-frontend, and other projects. There are a number of immediately visible changes:
  - Remove source and language translations from the repositories, hence no `.json`, `.po` or `.mo` files will be committed into the repos.
  - Add standardized `make extract_translations` in all repositories
  - Push user-facing messages strings into [openedx/openedx-translations](https://github.com/openedx/openedx-translations/).

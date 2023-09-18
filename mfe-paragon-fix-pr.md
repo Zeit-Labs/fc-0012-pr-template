@@ -1,6 +1,4 @@
-feat: include paragon in atlas pull
-
-This is a follow up to #??? because it should have included the changes but apparently OEP-58 needs more publicity.
+This is a follow-up to #??? because it should have included the changes but apparently [OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification) needs more publicity.
 
 Testing
 --------
