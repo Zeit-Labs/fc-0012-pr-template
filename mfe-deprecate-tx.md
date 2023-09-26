@@ -1,17 +1,15 @@
 ## Breaking change!
 
-This change breaks the Jenkins transifex integration which has been deprecated in favor of the new GitHub Transifex App integration as part of OEP-58.
+This change breaks the Jenkins transifex integration which has been deprecated in favor of the new GitHub Transifex App integration as part of [OEP-58](https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0058-arch-translations-management.html#specification).
 
 ## Changes
 
  - Removes all direct use of `tx pull` and `tx push` commands from the micro-frontend in favor
 of the [`atlas pull`](https://github.com/openedx/openedx-atlas/) command.
- - Remove source and language translations from the repositories, hence no `.json`, `.po` or `.mo` files will be committed into the repos.
- - Add standardized `make extract_translations` in all repositories
+ - Remove source and language translations from the repositories, hence no `.json` files will be committed into the repos. 
+ - `src/i18n/index.js` should export and empty array so the `make pull_translations` override it with the dynamic list of languages.
  - Remove the experimental `OPENEDX_ATLAS_PULL` flag to make `atlas pull` the default. 
- - Push user-facing messages strings into [openedx/openedx-translations](https://github.com/openedx/openedx-translations/).
- - Integrate root repositories with [openedx/openedx-atlas](https://github.com/openedx/openedx-atlas/) to pull translations on build/deploy time
- - Remove all Transifex related `Makefile` targets
+ - Remove all Transifex related `Makefile` targets and other files.
 
 Merge timeline
 -----------------------
@@ -21,6 +19,11 @@ This should only be merged after [Translation Infrastructure update OEP-58](http
 The timing announcement will be shared by @brian-smith-tcril on [#translations-project-fc-0012](https://openedx.slack.com/archives/C04R6TUJB7T) Open edX Slack channel.
 
 Keep this pull request as a draft to prevent accidental merge.
+
+### Pre-merge checklist
+
+
+ - [ ] https://github.com/openedx/wg-translations/issues/20 is approved
 
 References
 ----------
