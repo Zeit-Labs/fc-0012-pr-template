@@ -11,6 +11,28 @@ of the [`atlas pull`](https://github.com/openedx/openedx-atlas/) command.
  - Remove the experimental `OPENEDX_ATLAS_PULL` flag to make `atlas pull` the default. 
  - Remove all Transifex related `Makefile` targets and other files.
 
+Test results
+------------
+
+ - [ ] Verify that `make pull_translations` works as expected.
+
+<details><summary>make pull_translations test results</summary>
+
+```
+# I've run the following commands:
+$ make requirements
+$ make pull_translations
+$ git diff
+
+# Output of the commmands:
+
+<PASTE YOUR OUTPUT HERE>
+
+```
+
+</details> 
+
+
 Merge timeline
 -----------------------
 
