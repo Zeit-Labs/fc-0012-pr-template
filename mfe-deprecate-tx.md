@@ -23,7 +23,7 @@ Keep this pull request as a draft to prevent accidental merge.
 ### Pre-merge checklist
 
 
- - [ ] https://github.com/openedx/wg-translations/issues/20 is approved
+ - [ ] Wait for approval on https://github.com/openedx/wg-translations/issues/20
 
 References
 ----------
